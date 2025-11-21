@@ -79,16 +79,14 @@ WSGI_APPLICATION = 'todo_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'todo_app_db'),
-        'USER': os.getenv('DB_USER', 'superadmin'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'Password123'),
-        'HOST': os.getenv('DB_HOST', '127.0.0.1'),
-        'PORT': os.getenv('DB_PORT', '5432'),
-        'OPTIONS': {
-            'client_encoding': 'UTF8',
-        },
+        'NAME': os.environ.get('POSTGRES_DB', 'ci_db'),
+        'USER': os.environ.get('POSTGRES_USER', 'ci_user'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'ci_password'),
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
+
 
 
 # Password validation
