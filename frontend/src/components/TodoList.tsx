@@ -25,7 +25,6 @@ const TodoList: React.FC<TodoListProps> = ({ todos, currentFilterParams }) => {
                     <TodoItem
                         key={todo.id}
                         todo={todo}
-                        // ✅ التعديل هنا: تمرير الـ Prop إلى TodoItem
                         currentFilterParams={currentFilterParams}
                     />
                 ))}

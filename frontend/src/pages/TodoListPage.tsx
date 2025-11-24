@@ -27,7 +27,7 @@ const TodoListPage: React.FC = () => {
     return (
         <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl font-extrabold text-gray-800 mb-8 pb-2 text-center 
-               text-transparent bg-clip-text bg-linear-to-r from-orange-600 to-orange-400 
+                bg-clip-text bg-linear-to-r from-orange-600 to-orange-400 
                drop-shadow-lg transform hover:scale-105 transition duration-300">
                 Aufgabenliste
             </h1>
